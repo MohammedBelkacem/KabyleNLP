@@ -1,0 +1,101 @@
+    POS Tag                                   Description                                Example
+
+    CC                                          Conjonction de coordination     d, neɣ, &, akked, u
+
+    NC                                          Nombre cardinal                        yiwen, kṛad 
+
+    NCM                                        Nombre cardinal en chiffre          200, 100.2....
+
+    MET                                        Mot étranger                               "Bon appétit"
+
+    PRP                                        Préposition                                  d, deg, ɣer, ar, i
+
+    PRPT                                     Particule du prétérit                            ara yawin
+
+    PPA                                         Pronom personnel                      nekk, kem, kecc...
+
+    PAN                                         Pronom affixe du nom                -nneɣ -iw -w...
+
+    PANJ                                       Pronon affixe de nom adjectif    -agi, -a, -nni, -nniḍen
+
+    PAP                                         Pronom affixe de préposition    -i, -k, -m...
+
+    PSV                                       Pronom suffixe de verbes           wwiɣ-k, .... -k
+
+    PPV                                       Pronom préfixes de verbes          ad k-awiɣ   k-
+
+     PRD                                      Pronoms démonstratifs              wagi, win, tin
+
+    PRI                                         Pronoms indéfinis                       wayeḍ, ayen
+
+    PRL                                       Pronom relatif                               i : win i tḥemmel
+
+    NMC                                       Nom commun                             argaz, tira, azeggaɣ
+
+    NMP                                       Nom propre                                 Meẓyan, Bgayet, Tizi Wezzu
+
+     ADV                                       Adverbes                                     iḍelli
+
+    ADJ                                        Adjectif                                         bu, m , at, war, tar, yir, wis, tis
+
+    VAI                                          Verbe Aoriste impératif efk
+
+    VAF                                        Verbe Aoriste futur (ad) ad yefk
+
+    VP                                          Verbe Prétérit yefka
+
+    VPN                                        Verbe Prétérit négatif (ur + prétérit négatif+ ara) ur yefki ara, ur yefki ur yeqqim
+
+    VPA                                           Verbe Participe aoriste (ara + participe aoriste) ara yefken
+
+    VPPP                                      Verbe Participe du prétérit positif wid yefkan 
+
+    VPPN                                      Verbe Participe du prétérit négatif (ur+participe prétérit) ur nefki
+
+    VII                                            Verbe Impératif intensif ttak 
+
+    VAIT                                           Verbe Aoriste intensif                       ttaken
+
+    VPAIP                                      Verbe Participe aoriste intensif positif yettawken ittaken
+
+    VPAIN                                      Verbe Participe aoriste intensif négatif (ur +PAIN + ara)  ur netta
+
+    VS                                           verbe subjonctif yaɣ-d aman ma yebɣa
+
+    PRN                                        Particule de négation                ara ur
+
+    PRPT                                      Particule de participe                ara
+
+    PRA                                        Particule de l'aoriste                 ad
+
+    PDS                                        particule de direction suffixe     -d, -id
+
+    PDP                                        particule de direction préfixe        d-, id-
+
+    PNT                                        point  finale de phrase ou paragaraphe                                         .
+
+    INT                                          Intejection                                   ihuh, ahbuh, abbuh, bbuh,a, ay
+
+    $                                             Symbole monétaire                     $, £
+
+    %                                            Pourcentage                                %
+
+    PNCT                                    Ponctuation , ; ( ) ...
+
+    PREAL                                   particule de réalité           d
+
+    CS                                          conjonction de subordination   maca, asmi, makken
+
+    PLP                                        particule d appel                             a, ay
+
+    INJ                                          Interjection                                        ihuh
+
+    ADJ                                        Adjectif
+
+    PP                                          Particule de propriété n  n tmurt
+
+    DET                                        Déterminant yal
+
+    INTR                                          Interrogatif  anwa, anta, 
+
+    PAINT                                           Pronom affixe d'interrogatif anwa -k, anda-ten?
