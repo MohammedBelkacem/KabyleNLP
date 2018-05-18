@@ -6,7 +6,7 @@ aḍris=[]
 amenzu=0
 
 #Construction de la chaine d'apprentissage à partir du corpus kabyle
-for izirig in open("c:/tal/corpuspos.txt",encoding='utf-8'):
+for izirig in open("c:/tal/tagged_corpus.txt",encoding='utf-8'):
     if (amenzu!=0):
 
      #ligne=ligne.lower()
