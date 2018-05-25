@@ -29,8 +29,8 @@ aken-
 -inem
 -ines
 -iten
-ken-t
--kent
+kent-
+akent-
 -kent
 -nneɣ
 -nnek
@@ -70,6 +70,7 @@ aɣ-
 -ak
 -am
 -as
+ak-
 as-
 id-
 -id
@@ -100,3 +101,11 @@ t-
 -n
 n-
 -nniḍen
+-wat
+-wamt
+tent-
+am-
+-am
+akem-
+kem-
+-kem
