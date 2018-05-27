@@ -68,7 +68,7 @@ def tokenize(sentence,suffixe,prefixe):
 
 
 
-trained_model="file:///c:/tal/trained_model8.pickle"
+trained_model="file:///c:/tal/trained_model12.pickle"
 tagger = PerceptronTagger()
 tagger.load(trained_model)
 
