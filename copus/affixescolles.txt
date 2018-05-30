@@ -59,6 +59,7 @@ ken-
 -neɣ
 -nni
 sen-
+asen-
 -sen
 ten-
 -ten
@@ -84,6 +85,7 @@ tt-
 -tt
 -yi
 yi-
+iyi-
 -a
 d-
 -d
