@@ -14,7 +14,9 @@ NMC
 NMP
 PAN
 PAP
+PAD
 PDP
+PADV
 PDS
 PLP
 PNCT
@@ -52,7 +54,6 @@ PAINT
 ,
 ;
 :
-PADV
 “
 ”
 )
@@ -65,3 +66,10 @@ PADV
 .
 ”
 “
+«
+»
+[
+|
+]
+[
+}
