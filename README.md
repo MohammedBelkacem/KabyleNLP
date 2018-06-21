@@ -1,3 +1,6 @@
+The project is now maintained on GitLab
+https://gitlab.com/belkacem77/KabyleNLP/tree/master
+
 # KabyleNLP
 Natural language processing for the kabyle language
 
