@@ -1,1 +1,428 @@
+# Traduction en français à but indicatif de la licence Expat (MIT) :
+#
+# Droit d'auteur © 2014-2018 Kamal Buɛmara, Paul Anderson,
+# Sonia Achour, Samira Aissou, Samira Amari, Hamza Aouchiche, Salim Ayad,
+# Karim Boukhennaf, Nadir Bouremani, Wehhab Boussekkar, Lyes Ferguenis, 
+# Liza Gelloudi, Nassim Hamil, Muḥend u Remṭan Iɣit, Karima Kacel, Lynda Kadri,
+# Nabil Mehdioui, Ridha Meziani, Lynda Ouatah, Atmane Rahmani, Mustapha Tidjet, 
+# Mohand Cherif Zeggagh
+# et les autres contributeurs au projet "Imseɣti n tira n teqbaylit"
+# | http://tiranteqbaylit.sourceforge.net/
+#
+# Les informations de contact sont disponibles sur
+# https://www.facebook.com/Imseɣti-229008504335590/
+#
+# La permission est donnée, gratuitement, à n'importe quelle personne obtenant
+# une copie de ce logiciel et des fichiers de documentation associés
+# (ci-après le "Logiciel"), d'utiliser le Logiciel sans restriction, ce qui
+# inclut sans limite, le droit d'utiliser, copier, modifier, fusionner, publier,
+# distribuer, sous-licencier et / ou vendre des copies du Logiciel, et de
+# permettre aux personnes auxquelles le Logiciel est fourni de faire de même,
+# avec les conditions suivantes :
+#
+# La notice de copyright ci-dessus et cette notice doivent être incluses dans
+# toutes les copies ou portions substantielles du Logiciel.
+#
+# LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU
+# IMPLICITE, NOTAMMENT SANS GARANTIE DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN
+# USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS, LES AUTEURS OU
+# TITULAIRES DU DROIT D'AUTEUR NE SERONT RESPONSABLES DE TOUT DOMMAGE,
+# RÉCLAMATION OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UN CONTRAT,
+# D'UN DÉLIT OU AUTRE, EN PROVENANCE DE, CONSÉCUTIF À OU EN RELATION AVEC LE
+# LOGICIEL OU SON UTILISATION, OU AVEC D'AUTRES ÉLÉMENTS DU LOGICIEL.
+#
+# Attention : C'est une traduction de la version anglaise originale.
+# Dans le cas de différences éventuelles entre le sens de la version anglaise
+# originale et cette traduction, la version anglaise originale prévaudra :
+#
+#
+# Copyright © 2014-2018 Kamal Buɛmara, Paul Anderson,
+# Sonia Achour, Samira Aissou, Samira Amari, Hamza Aouchiche, Salim Ayad,
+# Karim Boukhennaf, Nadir Bouremani, Wehhab Boussekkar, Lyes Ferguenis, 
+# Liza Gelloudi, Nassim Hamil, Muḥend u Remṭan Iɣit, Karima Kacel, Lynda Kadri,
+# Nabil Mehdioui, Ridha Meziani, Lynda Ouatah, Atmane Rahmani, Mustapha Tidjet, 
+# Mohand Cherif Zeggagh
+# and the other contributors to the "Imseɣti n tira n teqbaylit" project
+# | http://tiranteqbaylit.sourceforge.net/
+#
+# Contact information is available at
+# https://www.facebook.com/Imseɣti-229008504335590/
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+#
 
+
+SET UTF-8
+CIRCUMFIX X
+#WORDCHARS -
+WORDCHARS °˚ʷ
+
+BREAK 2
+BREAK -
+BREAK ‑
+#NON-BREAKING HYPHEN
+#BREAK ^-
+#BREAK -$
+
+REP 8
+REP we wa
+REP u wa
+REP we u
+REP aɣ eɣ
+REP r ṛ
+REP ṣ$ ẓ
+REP ṭ$ ḍ
+REP a e
+
+MAP 30
+MAP ae
+MAP ğǧ
+MAP vb
+MAP uow
+MAP iy
+MAP tṭ
+MAP dḍ
+MAP jǧ
+MAP rṛ
+MAP sṣ
+MAP hḥ
+MAP zẓ
+MAP (gh)ɣ
+MAP âɛ
+MAP (ou)w
+MAP (ou)u
+MAP (dh)ḍ
+MAP (dh)d
+MAP (th)t
+MAP ṭḍ
+MAP (dj)ǧ
+MAP (ch)c
+MAP (kh)x
+MAP ṭ(ḍt)
+MAP (aa)ɛ
+MAP (tch)č
+MAP (tch)(čč)
+MAP cč
+MAP wʷ
+MAP w˚
+
+COMPOUNDPERMITFLAG j
+
+# VERBS
+
+PFX E Y 2
+PFX E e 0/X e is:e
+PFX E 0 0/X [^e] is:e
+# Empty rule must be triggered - not an option - otherwise circumfix invalid. Not e simpler than below.
+#PFX E 0 0/X [aiubcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:e
+
+SFX a Y 2
+SFX a 0 ɣ/EX [aiu] is:udem1sf
+SFX a 0 eɣ/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem1sf
+
+SFX c Y 2
+SFX c 0 ḍ/PX [aiu] is:udem2sf
+SFX c 0 eḍ/PX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem2sf
+
+SFX C Y 2
+SFX C 0 m/PX [aiu] is:udem2mlsg
+SFX C 0 em/PX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem2mlsg
+
+# Amyag n tɣara, suffix only.
+SFX d N 2
+SFX d 0 ḍ [aiu] is:udem2sf
+SFX d 0 eḍ [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem2sf
+
+SFX D Y 2
+SFX D 0 mt/PX [aiu] is:udem2ntsg
+SFX D 0 emt/PX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem2ntsg
+
+SFX M Y 2
+SFX M 0 n/EX [aiu] is:udem3mlsg
+SFX M 0 en/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem3mlsg
+
+# 3rd person feminine plural
+SFX U Y 2
+SFX U 0 nt/EX [aiu] is:udem3ntsg
+SFX U 0 ent/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:udem3ntsg
+
+# Imperative masculine plural form 1
+SFX G Y 2
+SFX G 0 t/EX [aiu] is:anaḍmlsg1
+SFX G 0 et/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:anaḍmlsg1
+
+# Amyag n tɣara, suffix only.
+SFX f N 1
+SFX f 0 et . is:udem3ntsf
+
+# Amyag n tɣara, all plurals, suffix only.
+SFX g N 1
+SFX g 0 it . is:sg
+
+# Imperative masculine plural form 2
+SFX H Y 2
+SFX H 0 m/EX [aiu] is:anaḍmlsg2
+SFX H 0 em/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:anaḍmlsg2
+
+# Imperative feminine plural
+SFX F Y 2
+SFX F 0 mt/EX [aiu] is:anaḍntsg
+SFX F 0 emt/EX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:anaḍntsg
+
+# 3rd person masculine singular, and participle (internal - circumfix)
+PFX m N 15
+PFX m 0 i [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem3mlsf
+PFX m 0 i [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem3mlsf
+PFX m 0 ye [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m 0 ye [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m 0 y [aiu] is:udem3mlsf
+PFX m e i e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem3mlsf
+PFX m e i e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem3mlsf
+PFX m e ye e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m e ye e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m e ye e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m 0 i [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m 0 i [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m e i e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m e i e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+PFX m e i e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3mlsf
+# 5 last in each case (/X and without) are iCC alternative for the yeCC verb conditions - with and without e dropping.
+
+# Same as m but cross-product and used in circumfix for participle. Internal only.
+PFX p Y 15
+PFX p 0 i/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:azwir_n_umaɣun
+PFX p 0 i/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:azwir_n_umaɣun
+PFX p 0 ye/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p 0 ye/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p 0 y/X [aiu] is:azwirnumaɣun
+PFX p e i/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:azwir_n_umaɣun
+PFX p e i/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:azwir_n_umaɣun
+PFX p e ye/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p e ye/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p e ye/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p 0 i/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p 0 i/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p e i/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p e i/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+PFX p e i/X e[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_n_umaɣun
+# 5 last in each case (/X and without) are iCC alternative for the yeCC verb conditions - with and without e dropping.
+
+# 3rd person feminine singular, and t prefix for other persons (internal - circumfix)
+PFX u N 9
+PFX u 0 t [aiu] is:udem3untiasuf
+PFX u 0 t [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem3ntsf
+PFX u 0 t [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem3ntsf
+PFX u 0 te [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3ntsf
+PFX u 0 te [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3ntsf
+PFX u e t [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem3ntsf
+PFX u e t [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem3ntsf
+PFX u e te [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3ntsf
+PFX u e te [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem3ntsf
+
+# Like u but internal,  t prefix for other persons (circumfix)
+PFX P Y 9
+PFX P 0 t/X [aiu] is:azwir_t
+PFX P 0 t/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:azwir_t
+PFX P 0 t/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:azwir_t
+PFX P 0 te/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_t
+PFX P 0 te/X [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_t
+PFX P e t/X [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:azwir_t
+PFX P e t/X [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:azwir_t
+PFX P e te/X [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_t
+PFX P e te/X [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:azwir_t
+
+# 1st person plural
+# May need an exception for n(e)nn here
+PFX A N 9
+PFX A 0 n [aiu] is:udem1asget
+PFX A 0 n [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem1sg
+PFX A 0 n [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem1sg
+PFX A 0 ne [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem1sg
+PFX A 0 ne [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem1sg
+PFX A e n [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:udem1sg
+PFX A e n [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:udem1sg
+PFX A e ne [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem1sg
+PFX A e ne [e][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:udem1sg
+
+# Participles
+SFX x Y 2
+SFX x 0 n/pX [aiu] is:amaɣun
+SFX x 0 en/pX [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:amaɣun
+
+# Amyag n tɣara, participle, suffix only.
+SFX z N 2
+SFX z 0 n [aiu] is:amaɣun
+SFX z 0 en [bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛʷ˚] is:amaɣun
+
+# NOUNS
+
+# Soft i CS prefix - visibility internal
+# Allow for ye being pronounced i even with a double consonant, and allow this i (and a single consonant i) to be written yi
+# Xprod to allow X. Could split a and ta out into a separate code like q and drop X and Xprod. But ta and a won't match i.
+PFX y Y 30
+PFX y a i/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y a i/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y a yi/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y a yi/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y a ye/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y a ye/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y a i/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y a i/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y a yi/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y a yi/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i i i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y i i i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y i yi i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y i yi i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y i ye i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i ye i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i i i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i i i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i yi i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y i yi i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta i/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y ta i/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y ta yi/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aiue] is:addad_amaruz
+PFX y ta yi/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][aiue] is:addad_amaruz
+PFX y ta ye/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta ye/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta i/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta i/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta yi/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX y ta yi/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+# Last 10 * for deriving masculine. Same relaxed rules for pronouncing/writing i and writing yi
+
+# Strong i nouns - to use with singular and plural
+PFX Y Y 1
+PFX Y 0 y i is:addad_amaruz
+
+# What to do with i8allen in .dic - soft i but listed as full word, not as regular pl.
+# Can render i as yi in writing, purely orthographically?
+
+# * are rules that derive one gender from the other. Only done for ta/a prefixed nouns.
+
+# Last 3 * as circumfix (with final t drop)
+# Xprod to allow X. If matches circumfix and ta, won't match a as well. Could split ta out into
+# internal code like q.
+PFX w Y 6
+PFX w a we a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX w a we a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX w a u a is:addad_amaruz
+PFX w ta we/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX w ta we/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX w ta u/X ta is:addad_amaruz
+
+PFX W N 1
+PFX W 0 w . is:addad_amaruz
+
+# Internal. Last *
+PFX b Y 2
+PFX b a i/X a is:addad_ilelli
+PFX b ta i/X ta is:addad_ilelli
+
+# FS and CS handled in one place
+SFX N Y 2
+SFX N 0 en/bX . is:mlsg
+SFX N 0 en/yX . is:mlsg
+
+# * FS and CS handled in one place
+SFX L Y 2
+SFX L t en/bX . is:mlsg
+SFX L t en/yX . is:mlsg
+
+# Internal. Last *
+PFX h Y 2
+PFX h ta ti/X ta is:addad_ilelli
+PFX h a ti/X a is:addad_ilelli
+
+# Internal *
+PFX k Y 1
+PFX k a ta/X . is:addad_ilelli
+
+# Internal *
+PFX K Y 1
+PFX K ta a/X . is:addad_ilelli
+
+# Feminine singular *
+SFX t Y 2
+SFX t 0 t/kX . is:ntsf
+SFX t 0 t/qX . is:ntsf
+
+# Masculine singular, t suffix removal *
+SFX l Y 2
+SFX l t 0/KX . is:mlsf
+SFX l t 0/wX . is:mlsf
+
+PFX e N 6
+PFX e ta t ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX e ta te ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX e ta te ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX e ti t ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX e ti te ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX e ti te ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+
+# Could keep these in e, as ta or ti could only match twice with the same meaning. But keep clean.
+PFX q Y 12
+PFX q ta t/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX q ta te/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q ta te/X ta[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q ti t/X ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX q ti te/X ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q ti te/X ti[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q a t/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX q a te/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q a te/X a[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q i t/X i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][aeiu] is:addad_amaruz
+PFX q i te/X i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+PFX q i te/X i[bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ][ʷ˚][bcčdḍfgǧhḥjklmnpqrṛsṣtṭvwxyzẓɣɛ] is:addad_amaruz
+
+# * Last 4. For creating regular soft feminine equivalents, only need as circumfix, as vowel reduction
+# of word with no final singular t or plural in not needed.
+# Such irregular words (hard singular i) or irregular plurals are listed separately, not
+# based on lemma.
+# Check that feminine strong i words have any regular-looking plural listed separately!
+
+# FS and CS handled in one place
+SFX n Y 2
+SFX n t in/hX . is:ntsg
+SFX n t in/qX . is:ntsg
+
+# * FS and CS handled in one place
+# Can't re-use n because it would chop a 't' off the end of a masculine noun
+# And because it needs to be separately settable
+SFX T Y 2
+SFX T 0 in/hX . is:ntsg
+SFX T 0 in/qX . is:ntsg
+
+NEEDAFFIX V
+FORBIDDENWORD Z
+COMPOUNDFLAG J
+#COMPOUNDBEGIN S
+#COMPOUNDEND L
+#COMPOUNDMIDDLE M
+ONLYINCOMPOUND O
+NOSUGGEST S
+
+ICONV 6
+ICONV γ ɣ
+ICONV Γ Ɣ
+ICONV ε ɛ
+ICONV Σ Ɛ
+ICONV ° ʷ
+ICONV ˚ ʷ
