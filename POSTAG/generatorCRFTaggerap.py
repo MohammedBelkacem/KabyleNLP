@@ -69,7 +69,7 @@ print(len(tagged_sentences[total:]))
 X_test, y_test = transform_to_dataset(tagged_sentences[total:])
 #déclaration du modèle suivant l'algotihme  lbfgs
 model = CRF(
-    algorithm='ap', # Limited-memory  Broyden–Fletcher–Goldfarb–Shanno Algorithm.
+    algorithm='ap', # Averaged Perceptron.
                        #Used to pos tag words or other information provided by the model within the situation.
 
 
