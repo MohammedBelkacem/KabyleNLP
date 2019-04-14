@@ -57,9 +57,16 @@ def transform_to_dataset(tagged_sentences):
         y.append([tag for _, tag in tagged])
 
     return X, y
+print(len(tagged_sentences))
+total=int(len(tagged_sentences)*0.80)
+print(total)
+#train=tagged_sentences
 
-X1_train, y1_train = transform_to_dataset(tagged_sentences)
+X1_train, y1_train = transform_to_dataset(tagged_sentences[:total])
+print(len(tagged_sentences[:total]))
+print(len(tagged_sentences[total:]))
 
+X_test, y_test = transform_to_dataset(tagged_sentences[total:])
 #déclaration du modèle suivant l'algotihme  lbfgs
 model = CRF(
     algorithm='lbfgs', # Limited-memory  Broyden–Fletcher–Goldfarb–Shanno Algorithm.
@@ -72,7 +79,13 @@ model = CRF(
 #entrainement
 model.fit(X1_train, y1_train)
 
+y_pred = model.predict(X_test)
+labels = list(model.classes_)
+print(labels)
+metrics.flat_f1_score(y_test, y_pred,
+                      average='weighted', labels=labels)
+print (model.score(X1_train, y1_train))
 # Sauvegarde du modèle
 
-from joblib import dump, load
-dump(model, 'model.joblib')
+#from joblib import dump, load
+#dump(model, 'model.joblib')
