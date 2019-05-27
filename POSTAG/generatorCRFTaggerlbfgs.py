@@ -1,3 +1,13 @@
+#-------------------------------------------------------------------------------
+# Name:        Postagginf or kabyle
+# Purpose:     POS TAG for Kabyle
+#
+# Author:      Muḥend Belqasem
+#
+# Created:     15/01/2019
+# Copyright:   (c) Belkacem Mohammed 2019
+# Licence:     <MIT>
+#-------------------------------------------------------------------------------
 from sklearn_crfsuite import CRF
 from nltk.tag.util import untag
 from sklearn_crfsuite import metrics
@@ -6,7 +16,7 @@ tagged_sentences=[]
 #Construction du texte global à aprtir du corpus étiqueté
 first=0
 taille2=0
-for ligne in open("c:/tal/corpus-kab.txt",encoding='utf-8'):
+for ligne in open("corpus-kab.txt",encoding='utf-8'):
     taille=0
     if (first!=0):
         sentence=[]
