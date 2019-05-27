@@ -1,4 +1,13 @@
-﻿from sklearn_crfsuite import CRF
+#-------------------------------------------------------------------------------
+# Name:        Postagginf or kabyle
+# Purpose:     POS TAG for Kabyle
+#
+# Author:      Muḥend Belqasem
+#
+# Created:     15/01/2019
+# Copyright:   (c) Belkacem Mohammed 2019
+# Licence:     <MIT>
+from sklearn_crfsuite import CRF
 aḍris=[]
 amenzu=0
 uḍfiren=[]
