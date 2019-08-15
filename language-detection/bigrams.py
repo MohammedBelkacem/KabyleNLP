@@ -31,7 +31,10 @@ def train_language(path,lang_name):
     bigram_model = finder.ngram_fd.items()
     bigram_model = sorted(finder.ngram_fd.items(), key=lambda item: item[1],reverse=True)
 
-    print (bigram_model)
+    print (lang_name)
+    for i in bigram_model:
+        print (i)
+
     np.save(lang_name+".npy",bigram_model) # save language model
 
 if __name__ == "__main__":
