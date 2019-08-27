@@ -80,4 +80,6 @@ def download (src_file):
     for url in f:
         values = line.split("\t")
         wget.download(values[1])
+    f.close()
+download (src_file)
 
