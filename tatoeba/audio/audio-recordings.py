@@ -1,6 +1,13 @@
+#By Mohammed Belkacem 2019
+#Apache License
+#Version 2.0, January 2004
+#http://www.apache.org/licenses
+
+
 #First, you have to download the sentence file and the audio file. The sentence file contains all sentences, the audio
 #file contains Ids of the recorded sentences.
-# extract lang sentences from src file and generate target file
+# extract lang (a 3 char code) sentences from src file and generate target file. Example for english lang="eng", 
+#kabyle: lang="kab"
 
 lang="kab"
 src_file="sentences.csv"
