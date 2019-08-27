@@ -64,7 +64,7 @@ def generate_lang_file_audio (target_audio_file,audio_file,sentences_ids):
             values = line.split("\t")
             if int(values[0]) in sentences_ids:
              #audiokab.append(values[1])
-             kab_audio.write(values[0]+"\t"+values[2]+"\n")
+             kab_audio.write(values[0]+"\t"+values[3]+"\n")
     kab_audio.close()
     f.close()
 
