@@ -74,7 +74,7 @@ target_audio_file="sentences_with_audio.csv"
 def download (target_audio_file):
     f=open(target_audio_file,encoding='utf-8')
     for url in f:
-        values = line.split("\t")
+        values = url.split("\t")
         try:
          wget.download(values[1])
         except:
